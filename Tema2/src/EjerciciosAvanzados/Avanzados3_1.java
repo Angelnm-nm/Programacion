@@ -17,6 +17,7 @@ public class Avanzados3_1 {
             System.out.println(numero + " no es primo ");
         }
 
+
         sc.close();
     }
     static boolean esPrimo(int numero, int divisor) {
