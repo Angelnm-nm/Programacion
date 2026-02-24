@@ -37,7 +37,6 @@ public class Robot {
             }
         }
     }
-
     public void atacar(Robot enemigo) {
         if (!this.estaVivo()) {
             System.out.println("El robot " + nombre + " está destruido y no puede atacar");
