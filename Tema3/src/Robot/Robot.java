@@ -3,11 +3,11 @@ package Robot;
 import java.util.Random;
 
 public class Robot {
-    private String nombre;
-    private String modelo;
+    private final String nombre;
+    private final String modelo;
     private double vida;
-    private double potenciaAtaque;
-    private double blindaje;
+    private final double potenciaAtaque;
+    private final double blindaje;
 
     public Robot(String nombre, String modelo) {
         Random r = new Random();

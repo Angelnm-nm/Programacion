@@ -1,11 +1,11 @@
 package PersonaEx;
 
 public class Person {
-    private String nombre;
-    private int edad;
-    private boolean esFumador;
-    private String estadoSalud;
-    private double seguro = 500;
+    private final String nombre;
+    private final int edad;
+    private final boolean esFumador;
+    private final String estadoSalud;
+    private final double seguro = 500;
 
     public Person(String nombre, int edad, boolean esFumador, String estadoSalud) {
         this.nombre = nombre;

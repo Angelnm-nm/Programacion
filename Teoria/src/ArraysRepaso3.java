@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class ArraysRepaso3 {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int [] notas = {4,9,7,5,10};
         System.out.println(Arrays.toString(notas));
         notas[0] = 6;

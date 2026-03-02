@@ -1,7 +1,7 @@
 package EjerciciosAvanzados;
 
 public class Recursividad_1 {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         String hola ="hola";
         System.out.println(hola.charAt(0));
         System.out.println(hola.substring(1));

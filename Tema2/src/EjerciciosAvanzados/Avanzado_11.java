@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Avanzado_11 {    public static void main(String[] args) {
+public class Avanzado_11 {    static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
     int numeroSecreto = (int) (Math.random() * 100) + 1;

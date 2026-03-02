@@ -5,7 +5,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class EjercicoArray_0 {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("eligue el numero que quieres que te diga cuantas veces esta adentro de la arraid");

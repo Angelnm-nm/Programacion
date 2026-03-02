@@ -11,7 +11,7 @@ public class persona {
 
     private String nombre;
     private int edad;
-    private String dni;
+    private final String dni;
     private char sexo;
     private double peso;
     private double altura;

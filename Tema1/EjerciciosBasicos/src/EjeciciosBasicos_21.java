@@ -3,7 +3,7 @@ package EjerciciosBasicos;
 import java.util.Scanner;
 
 public class EjeciciosBasicos_21 {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("pon la cantidad de numeros para hacer la media");
         int cantidad= sc.nextInt();
@@ -18,7 +18,7 @@ public class EjeciciosBasicos_21 {
     }
 
     public static class EjerciciosBasicos_1 {
-        public static void main(String[] args) {
+        static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
 
             System.out.println("introduce numero entero");

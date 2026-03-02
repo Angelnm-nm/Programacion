@@ -3,7 +3,7 @@ package EjerciciosBasicos;
 import java.util.Scanner;
 
 public class EjerciciosBasicos_24 {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Introduce un número entre 0 y 9999: ");
         int numero = sc.nextInt();

@@ -4,8 +4,8 @@ public class Socio {
 
     private static int contadorSocios = 0;
 
-    private int id;
-    private String nombre;
+    private final int id;
+    private final String nombre;
 
     public Socio(String nombre) {
         contadorSocios++;

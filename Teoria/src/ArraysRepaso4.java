@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class ArraysRepaso4 {
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
 
         int[] numeros = {7, 4, 9};

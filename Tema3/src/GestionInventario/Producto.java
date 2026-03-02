@@ -1,9 +1,9 @@
 package GestionInventario;
 
 public class Producto {
-    private String nombre;
-    private double precio;
-    private int stock;
+    private final String nombre;
+    private final double precio;
+    private final int stock;
 
 
     public Producto(String nombre, double precio, int stock) {

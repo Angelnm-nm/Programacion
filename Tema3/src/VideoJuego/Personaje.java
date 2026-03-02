@@ -14,11 +14,8 @@ public class Personaje {
     }
 
     int recibirDaño(int daño) {
-        if (this.esMagico == true) {
+        if (this.esMagico) {
             return daño / 3;
-        }
-        if (daño == 0) {
-            return 0;
         }
         return daño;
     }

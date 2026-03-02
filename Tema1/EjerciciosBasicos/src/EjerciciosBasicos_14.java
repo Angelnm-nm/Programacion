@@ -3,7 +3,7 @@ package EjerciciosBasicos;
 import java.util.Scanner;
 
 public class EjerciciosBasicos_14 {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int numero;
 

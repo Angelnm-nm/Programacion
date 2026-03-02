@@ -1,5 +1,5 @@
 public class PYM {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         
     }
 }

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Avanzados3_1 {
     //Implementa un metodo recursivo que determine si un número es primo.
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("escribe el numero ");

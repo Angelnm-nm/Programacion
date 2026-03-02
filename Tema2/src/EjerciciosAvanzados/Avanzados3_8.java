@@ -1,7 +1,7 @@
 package EjerciciosAvanzados;
 
 public class Avanzados3_8 {
-        public static void main(String[] args) {
+        static void main(String[] args) {
 
             String cadena = "hola";
             char caracter = cadena.charAt(0);

@@ -1,5 +1,5 @@
 public class ArraysRepaso6 {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int [][] notas = new int[2][3];
         notas [0][0] = 5;
         notas [0][1] = 8;

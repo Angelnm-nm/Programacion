@@ -3,7 +3,7 @@ package EjerciciosAvanzados;
 import java.util.Arrays;
 
 public class Arrays_3 {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int[] numeros1 = {1, 2, 3};
         int[] numeros2 = {4, 5, 6};
 

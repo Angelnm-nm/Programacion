@@ -1,7 +1,7 @@
 package Robot;
 
 public class mainRobot {
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         Robot robot1 = new Robot("Mazinger", "Z");
         Robot robot2 = new Robot("Optimus", "Prime");

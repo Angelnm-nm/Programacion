@@ -3,7 +3,7 @@ package EjerciciosAvanzados;
 import java.util.Scanner;
 
 public class EjerciciosArray_2 {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("cuantos datos vas a meter");
         int cantidadDatos = sc.nextInt();

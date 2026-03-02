@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class EjercicioNumerosAleatorios {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int[] numeroAleatorio = new int[20];
         for (int i = 0; i < numeroAleatorio.length ; i++) {
 
