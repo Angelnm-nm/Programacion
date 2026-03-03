@@ -4,11 +4,12 @@ import java.io.IOException;
 import java.util.Scanner ;
 
 public class ProcesadorDatos {
-    Scanner leer = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
+    String numeroc = sc.nextLine();
     public void procesarEtrada() throws IOException {
         try {
             System.out.println("Ingresa el valor del numero");
-            int numero = Integer.parseInt(leer.nextLine());
+            int numero = Integer.parseInt(numeroc);
             int resultado = numero / 100;
 
         }catch(NumberFormatException e) {
