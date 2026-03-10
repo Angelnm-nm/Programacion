@@ -2,12 +2,13 @@ package EqualsHashCode.ejercicio1;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 
 public class LimpiezaDeLista {
     static void main(String[] args) {
 
 
-        ArrayList<String> colores = new ArrayList<>();
+        List<String> colores = new ArrayList<>();
         colores.add("Rojo");
         colores.add("Azul");
         colores.add("Rojo");
