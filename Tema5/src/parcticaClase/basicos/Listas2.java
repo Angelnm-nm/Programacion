@@ -17,6 +17,5 @@ public class Listas2 {
         for (String nombre : nombres){
             System.out.println(nombre);
         }
-
     }
 }
