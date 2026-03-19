@@ -58,8 +58,6 @@ public class MainVideojuego {
             if(v.getFechaVenta().equals(fecha)){
                 System.out.println(v);
             }
-
         }
     }
 }
-

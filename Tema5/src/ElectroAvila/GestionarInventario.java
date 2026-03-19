@@ -30,7 +30,6 @@ public class GestionarInventario {
             }
         }
 
-        // TAREA 4 - ordenar por stock descendente
         filtrados.sort((a, b) -> b.getStock() - a.getStock());
 
         System.out.println("\n--- INVENTARIO FINAL (Precio > 300€, con IVA, ordenado por Stock) ---");
