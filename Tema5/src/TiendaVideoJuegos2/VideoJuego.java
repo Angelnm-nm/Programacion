@@ -1,24 +1,21 @@
 package TiendaVideoJuegos2;
-
 import java.util.UUID;
-
 public class VideoJuego {
     String titulo;
     String plataforma;
     String genero;
     double precio;
     int stock;
+    UUID Identificador;
 
-    public VideoJuego(String titulo, String plataforma, String genero, double precio, int stock, UUID identificador) {
+    public VideoJuego(String titulo, String plataforma, String genero, double precio, int stock) {
         this.titulo = titulo;
         this.plataforma = plataforma;
         this.genero = genero;
         this.precio = precio;
         this.stock = stock;
-        Identificador = identificador;
+        Identificador = UUID.randomUUID();
     }
-
-    UUID Identificador= UUID.randomUUID();
 
     public String getTitulo() {
         return titulo;
