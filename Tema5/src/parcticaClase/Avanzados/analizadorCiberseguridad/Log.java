@@ -1,5 +1,7 @@
 package parcticaClase.Avanzados.analizadorCiberseguridad;
 
+import java.util.Objects;
+
 public class Log {
 
     int idLog;
@@ -17,13 +19,17 @@ public class Log {
     // TODO
     @Override
     public boolean equals(Object o) {
-        return false;
+        //        return false;
+        if (!(o instanceof Log log))
+            return false;
+        return this.idLog == log.idLog;
     }
 
     // TODO
     @Override
     public int hashCode() {
-        return 0;
+//        return 0;
+        return Objects.hash(idLog);
     }
 
 }
