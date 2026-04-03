@@ -14,6 +14,11 @@ public class Log {
         this.ubicacion = ubicacion;
     }
 
+
+    public int getIdLog() {
+        return idLog;
+    }
+
     // TODO el equals y el hashcode solo funcionaran con el id
 
     // TODO

@@ -81,6 +81,12 @@ public class AnalizadorCiberseguridad {
         // T4: Extraer IDs de cámaras que necesitan revisión (Solo si son LogCamara)
         Set<Integer> idsRevisionVisual = new TreeSet<>(); // TreeSet para que salgan ordenados
         // TODO: Usar instanceof y casting para filtrar solo LogCamara e insertar sus IDs
+        for(Log log : logsUnicos){
+            if(log instanceof LogCamara){
+                LogCamara logCamara = (LogCamara) log;
+                idsRevisionVisual.add(logCamara.getIdLog());
+            }
+        }
 
 
         // --- SALIDA DE RESULTADOS ---

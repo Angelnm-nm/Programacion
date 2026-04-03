@@ -5,7 +5,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class Vuelos {
+public class
+Vuelos {
 
     public static void main(String[] args) {
         Map<String, Map<String, Double>> vuelosPasajerosCoste = new HashMap<>();

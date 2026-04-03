@@ -35,18 +35,54 @@ public class OperacionAlonso {
         // Solo procesar si "autorizado" es false.
         Map<String, Map<String, Integer>> mapaFallos = new HashMap<>();
         // TODO: Rellenar mapaFallos. Ejemplo: "Servidores" -> {"Login": 2}
+        for (Map<String, Object> evento : eventosUnicos) {
+            boolean autorizado = (boolean) evento.get("autorizado");
+            if (!autorizado) {
+                String zona = (String) evento.get("zona");
+                String tipo = (String) evento.get("tipo");
+                // Si la zona no existe, la creo
+                if (!mapaFallos.containsKey(zona)) {
+                    mapaFallos.put(zona, new HashMap<>());
+                }
+                Map<String, Integer> subMapa = mapaFallos.get(zona);
+                if (!subMapa.containsKey(tipo)) {
+                    subMapa.put(tipo, 0);
+                }
+                subMapa.put(tipo, subMapa.get(tipo) + 1);
+            }
+        }
 
 
         // T3: Detección de Brechas de Seguridad (List)
         // Si el total de fallos de una zona en 'mapaFallos' > limite en 'limitesZona'
         List<String> zonasComprometidas = new ArrayList<>();
         // TODO: Recorrer mapaFallos, sumar sus valores y comparar con limitesZona
+        for (String zona : mapaFallos.keySet()){
+            int totalFallos = 0;
+            for (int valor : mapaFallos.get(zona).values()){
+                totalFallos += valor;
+            }
+            int limite = limitesZona.get(zona);
+            if (totalFallos > limite) {
+                zonasComprometidas.add(zona);
+            }
+        }
 
 
         // T4: Ranking de Tipos de Ataque (Map)
         // Queremos saber qué 'tipo' es el más usado en los fallos (conteo global)
         Map<String, Integer> frecuenciaTipos = new TreeMap<>();
         // TODO: Contar cuántas veces aparece cada "tipo" en los eventos fallidos únicos
+        for (Map<String, Object> evento : eventosUnicos){
+            boolean autorizado = (boolean) evento.get("autorizado");
+            if (!autorizado) {
+                String tipo = (String) evento.get("tipo");
+                if (!frecuenciaTipos.containsKey(tipo)) {
+                    frecuenciaTipos.put(tipo, 0);
+                }
+                frecuenciaTipos.put(tipo, frecuenciaTipos.get(tipo) + 1);
+            }
+        }
 
 
         // --- SALIDA DE RESULTADOS ---

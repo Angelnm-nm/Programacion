@@ -6,4 +6,6 @@ public class LogCamara extends Log {
         super(id, ip, loc);
         this.resolucion = res;
     }
+
+
 }
