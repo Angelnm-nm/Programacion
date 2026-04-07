@@ -6,7 +6,7 @@ import java.util.TreeSet;
 
 public class TreeSetDeMapas {
     public static void main(String[] args) {
-        TreeSet < Map<String,Object>> infoCIudades = new TreeSet<>();
+       /* TreeSet < Map<String,Object>> infoCIudades = new TreeSet<>();
         HashMap < String, Object> ciudad1= new HashMap <>();
         ciudad1.put("Madrid" , 1000);
         infoCIudades.add(ciudad1);
@@ -30,10 +30,23 @@ public class TreeSetDeMapas {
 
         HashMap < String, Object> ciudad6= new HashMap <>();
         ciudad6.put("Leon" , 6000);
-        infoCIudades.add(ciudad6);
+        infoCIudades.add(ciudad6); */
+        TreeSet < Map<String,Object>> infoObjetos = new TreeSet<>();
 
-        
+        Map<String, Object> p1 = new HashMap<>();
+        p1.put("id", 1);
+        p1.put("nombre", "Teclado");
+        p1.put("precio", 25.0);
 
+        Map<String, Object> p2 = new HashMap<>();
+        p2.put("id", 1); // mismo id → debería ser duplicado
+        p2.put("nombre", "Teclado");
+        p2.put("precio", 25.0);
+
+        Map<String, Object> p3 = new HashMap<>();
+        p3.put("id", 2);
+        p3.put("nombre", "Ratón");
+        p3.put("precio", 15.0);
 
     }
 }
