@@ -85,13 +85,15 @@ Vuelos {
     public static Set<String> getIdentificadoresVuelos(
             Map<String, Map<String, Double>> vuelosPasajerosCoste
     ) {
-        Set<String> identificadores = new HashSet<>();
+        /*Set<String> identificadores = new HashSet<>();
 
         for (String codigo : vuelosPasajerosCoste.keySet()) {
             identificadores.add(codigo);
         }
 
-        return identificadores;
+        return identificadores;*/
+        return vuelosPasajerosCoste.keySet();
+
     }
 
     public static Double getBilleteMasCaro(
@@ -142,6 +144,7 @@ Vuelos {
         for (Map<String, Double> pasajeros : vuelosPasajerosCoste.values()) {
             for (String dni : pasajeros.keySet()) {
                 double importe = pasajeros.get(dni);
+
 
                 double anterior = acumulado.getOrDefault(dni, 0.0);
                 acumulado.put(dni, anterior + importe);
